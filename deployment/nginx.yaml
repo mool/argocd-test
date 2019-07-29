@@ -24,7 +24,7 @@ metadata:
     kubernetes.io/ingress.class: private
 spec:
   rules:
-  - host: test-app.testing.invision.works
+  - host: test-app.use1-test-2.internal.invision.works
     http:
       paths:
       - backend:
