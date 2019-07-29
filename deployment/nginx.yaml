@@ -18,6 +18,10 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: test-app
+  labels:
+    app: test-app
+  annotations:
+    kubernetes.io/ingress.class: private
 spec:
   rules:
   - host: test-app.testing.invision.works
