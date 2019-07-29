@@ -28,7 +28,7 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: web
+          serviceName: test-app
           servicePort: 80
         path: /
 ---
