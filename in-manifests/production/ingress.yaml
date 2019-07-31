@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test-app
+  labels:
+    app: test-app
+  annotations:
+    kubernetes.io/ingress.class: private
+spec:
+  rules:
+  - host: test-app.use1-test-2.internal.invision.works
+    http:
+      paths:
+      - backend:
+          serviceName: test-app
+          servicePort: 80
+        path: /
